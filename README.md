@@ -23,10 +23,7 @@ clickhouse-client_1  | {"offsets":[{"partition":0,"offset":0,"error_code":null,"
 
 ```select * from causing_problems_mv;```
 ```
-┌─field_a─┬─field_b─┬─field_c─┬──max_field_datetime─┐
-│ 1       │ type_a  │       1 │ 2021-12-01 14:00:00 │
-│ 2       │ type_a  │       2 │ 2021-12-01 13:00:00 │
-└─────────┴─────────┴─────────┴─────────────────────┘
+0 rows in set. Elapsed: 0.002 sec.
 ```
 
 ```select * from table_i;```
@@ -39,9 +36,5 @@ clickhouse-client_1  | {"offsets":[{"partition":0,"offset":0,"error_code":null,"
 
 ```select * from table_ii;```
 ```
-┌─field_b─┬─field_c─┬──────field_datetime─┐
-│ type_a  │       1 │ 2021-12-01 12:00:00 │
-│ type_a  │       1 │ 2021-12-01 14:00:00 │
-│ type_a  │       2 │ 2021-12-01 13:00:00 │
-└─────────┴─────────┴─────────────────────┘
+0 rows in set. Elapsed: 0.003 sec.
 ```

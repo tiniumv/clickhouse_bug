@@ -72,7 +72,7 @@ services:
       KAFKA_REST_LISTENERS: http://kafka-rest:38082
 
   clickhouse:
-    image: yandex/clickhouse-server:21.10-alpine
+    image: yandex/clickhouse-server:21.11-alpine
     ports:
       - "8123:8123"
       - "9000:9000"
