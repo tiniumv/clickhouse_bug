@@ -1,3 +1,5 @@
+## This branch dows not work as intended
+
 All migrations are applied during creation of containers, first in ```kafka-init``` (topic creation), then in ```clickhouse-client``` (everything else).
 
 
