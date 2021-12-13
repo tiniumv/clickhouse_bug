@@ -1,0 +1,499 @@
+2021.12.13 09:55:27.667093 [ 1 ] {} <Information> SentryWriter: Sending crash reports is disabled
+2021.12.13 09:55:27.685673 [ 1 ] {} <Trace> Pipe: Pipe capacity is 1.00 MiB
+2021.12.13 09:55:27.842789 [ 1 ] {} <Information> : Starting ClickHouse 21.10.4.26 with revision 54455, build id: CEAB157F210D3FA989B2F313CE8D7CC9A5482327, PID 1
+2021.12.13 09:55:27.843708 [ 1 ] {} <Information> Application: starting up
+2021.12.13 09:55:27.844386 [ 1 ] {} <Information> Application: OS name: Linux, version: 5.4.72-microsoft-standard-WSL2, architecture: x86_64
+2021.12.13 09:55:28.733389 [ 1 ] {} <Information> Application: Calculated checksum of the binary: 2B79468195F56643B25DB1F1F8F1FBAC, integrity check passed.
+2021.12.13 09:55:28.733448 [ 1 ] {} <Information> Application: It looks like the process has no CAP_IPC_LOCK capability, binary mlock will be disabled. It could happen due to incorrect ClickHouse package installation. You could resolve the problem manually with 'sudo setcap cap_ipc_lock=+ep /usr/bin/clickhouse'. Note that it will not work on 'nosuid' mounted filesystems.
+2021.12.13 09:55:28.745228 [ 1 ] {} <Debug> Application: rlimit on number of file descriptors is 262144
+2021.12.13 09:55:28.745255 [ 1 ] {} <Debug> Application: Initializing DateLUT.
+2021.12.13 09:55:28.745263 [ 1 ] {} <Trace> Application: Initialized DateLUT with time zone 'UTC'.
+2021.12.13 09:55:28.745289 [ 1 ] {} <Debug> Application: Setting up /var/lib/clickhouse/tmp/ to store temporary data in it
+2021.12.13 09:55:28.746267 [ 1 ] {} <Debug> Application: Configuration parameter 'interserver_http_host' doesn't exist or exists and empty. Will use '80d038445b47' as replica host.
+2021.12.13 09:55:28.746294 [ 1 ] {} <Debug> Application: Initiailizing interserver credentials.
+2021.12.13 09:55:28.746852 [ 1 ] {} <Information> SensitiveDataMaskerConfigRead: 1 query masking rules loaded.
+2021.12.13 09:55:28.747551 [ 1 ] {} <Debug> ConfigReloader: Loading config '/etc/clickhouse-server/config.xml'
+2021.12.13 09:55:28.751815 [ 1 ] {} <Debug> ConfigReloader: Loaded config '/etc/clickhouse-server/config.xml', performing update on configuration
+2021.12.13 09:55:28.753115 [ 1 ] {} <Information> Application: Setting max_server_memory_usage was set to 11.08 GiB (12.31 GiB available * 0.90 max_server_memory_usage_to_ram_ratio)
+2021.12.13 09:55:28.755076 [ 1 ] {} <Debug> ConfigReloader: Loaded config '/etc/clickhouse-server/config.xml', performed update on configuration
+2021.12.13 09:55:28.756326 [ 1 ] {} <Debug> ConfigReloader: Loading config '/etc/clickhouse-server/users.xml'
+2021.12.13 09:55:28.757381 [ 1 ] {} <Debug> ConfigReloader: Loaded config '/etc/clickhouse-server/users.xml', performing update on configuration
+2021.12.13 09:55:28.758662 [ 1 ] {} <Debug> ConfigReloader: Loaded config '/etc/clickhouse-server/users.xml', performed update on configuration
+2021.12.13 09:55:28.759137 [ 1 ] {} <Debug> Access(user directories): Added users.xml access storage 'users.xml', path: /etc/clickhouse-server/users.xml
+2021.12.13 09:55:28.759281 [ 1 ] {} <Warning> Access(local directory): File /var/lib/clickhouse/access/users.list doesn't exist
+2021.12.13 09:55:28.759305 [ 1 ] {} <Warning> Access(local directory): Recovering lists in directory /var/lib/clickhouse/access/
+2021.12.13 09:55:28.759464 [ 1 ] {} <Debug> Access(user directories): Added local directory access storage 'local directory', path: /var/lib/clickhouse/access/
+2021.12.13 09:55:28.759493 [ 1 ] {} <Information> Application: Uncompressed cache size was lowered to 6.15 GiB because the system has low amount of memory
+2021.12.13 09:55:28.761727 [ 1 ] {} <Information> Application: Loading user defined objects from /var/lib/clickhouse/
+2021.12.13 09:55:28.761753 [ 1 ] {} <Debug> UserDefinedObjectsLoader: loading user defined objects
+2021.12.13 09:55:28.761792 [ 1 ] {} <Debug> Application: Loaded user defined objects
+2021.12.13 09:55:28.761800 [ 1 ] {} <Information> Application: Loading metadata from /var/lib/clickhouse/
+2021.12.13 09:55:28.764374 [ 1 ] {} <Information> DatabaseAtomic (system): Total 0 tables and 0 dictionaries.
+2021.12.13 09:55:28.772313 [ 1 ] {} <Information> DatabaseCatalog: Found 0 partially dropped tables. Will load them and retry removal.
+2021.12.13 09:55:28.780204 [ 1 ] {} <Information> DatabaseAtomic (default): Total 0 tables and 0 dictionaries.
+2021.12.13 09:55:28.780240 [ 1 ] {} <Information> BackgroundSchedulePool/BgSchPool: Create BackgroundSchedulePool with 128 threads
+2021.12.13 09:55:28.793019 [ 1 ] {} <Information> DatabaseAtomic (default): Starting up tables.
+2021.12.13 09:55:28.793072 [ 1 ] {} <Information> DatabaseAtomic (system): Starting up tables.
+2021.12.13 09:55:28.794040 [ 1 ] {} <Debug> Application: Loaded metadata.
+2021.12.13 09:55:28.794106 [ 1 ] {} <Trace> Pipe: Pipe capacity is 1.00 MiB
+2021.12.13 09:55:28.794160 [ 1 ] {} <Information> Application: It looks like the process has no CAP_SYS_NICE capability, the setting 'os_thread_priority' will have no effect. It could happen due to incorrect ClickHouse package installation. You could resolve the problem manually with 'sudo setcap cap_sys_nice=+ep /usr/bin/clickhouse'. Note that it will not work on 'nosuid' mounted filesystems.
+2021.12.13 09:55:28.794268 [ 1 ] {} <Trace> AsynchronousMetrics: Scanning /sys/class/thermal
+2021.12.13 09:55:28.794287 [ 1 ] {} <Trace> AsynchronousMetrics: Scanning /sys/block
+2021.12.13 09:55:28.794563 [ 1 ] {} <Trace> AsynchronousMetrics: Scanning /sys/devices/system/edac
+2021.12.13 09:55:28.794579 [ 1 ] {} <Trace> AsynchronousMetrics: Scanning /sys/class/hwmon
+2021.12.13 09:55:28.827574 [ 1 ] {} <Warning> Application: Listen [::]:8123 failed: Poco::Exception. Code: 1000, e.code() = 0, DNS error: EAI: Address family for hostname not supported (version 21.10.4.26 (official build)). If it is an IPv6 or IPv4 address and your host has disabled IPv6 or IPv4, then consider to specify not disabled IPv4 or IPv6 address to listen in <listen_host> element of configuration file. Example for disabled IPv6: <listen_host>0.0.0.0</listen_host> . Example for disabled IPv4: <listen_host>::</listen_host>
+2021.12.13 09:55:28.835574 [ 1 ] {} <Warning> Application: Listen [::]:9000 failed: Poco::Exception. Code: 1000, e.code() = 0, DNS error: EAI: Address family for hostname not supported (version 21.10.4.26 (official build)). If it is an IPv6 or IPv4 address and your host has disabled IPv6 or IPv4, then consider to specify not disabled IPv4 or IPv6 address to listen in <listen_host> element of configuration file. Example for disabled IPv6: <listen_host>0.0.0.0</listen_host> . Example for disabled IPv4: <listen_host>::</listen_host>
+2021.12.13 09:55:28.835772 [ 1 ] {} <Warning> Application: Listen [::]:9009 failed: Poco::Exception. Code: 1000, e.code() = 0, DNS error: EAI: Address family for hostname not supported (version 21.10.4.26 (official build)). If it is an IPv6 or IPv4 address and your host has disabled IPv6 or IPv4, then consider to specify not disabled IPv4 or IPv6 address to listen in <listen_host> element of configuration file. Example for disabled IPv6: <listen_host>0.0.0.0</listen_host> . Example for disabled IPv4: <listen_host>::</listen_host>
+2021.12.13 09:55:28.835956 [ 1 ] {} <Warning> Application: Listen [::]:9004 failed: Poco::Exception. Code: 1000, e.code() = 0, DNS error: EAI: Address family for hostname not supported (version 21.10.4.26 (official build)). If it is an IPv6 or IPv4 address and your host has disabled IPv6 or IPv4, then consider to specify not disabled IPv4 or IPv6 address to listen in <listen_host> element of configuration file. Example for disabled IPv6: <listen_host>0.0.0.0</listen_host> . Example for disabled IPv4: <listen_host>::</listen_host>
+2021.12.13 09:55:28.836105 [ 1 ] {} <Warning> Application: Listen [::]:9005 failed: Poco::Exception. Code: 1000, e.code() = 0, DNS error: EAI: Address family for hostname not supported (version 21.10.4.26 (official build)). If it is an IPv6 or IPv4 address and your host has disabled IPv6 or IPv4, then consider to specify not disabled IPv4 or IPv6 address to listen in <listen_host> element of configuration file. Example for disabled IPv6: <listen_host>0.0.0.0</listen_host> . Example for disabled IPv4: <listen_host>::</listen_host>
+2021.12.13 09:55:28.836289 [ 1 ] {} <Information> Application: Listening for http://0.0.0.0:8123
+2021.12.13 09:55:28.836340 [ 1 ] {} <Information> Application: Listening for connections with native protocol (tcp): 0.0.0.0:9000
+2021.12.13 09:55:28.836384 [ 1 ] {} <Information> Application: Listening for replica communication (interserver): http://0.0.0.0:9009
+2021.12.13 09:55:28.863713 [ 1 ] {} <Trace> MySQLHandlerFactory: Failed to create SSL context. SSL will be disabled. Error: Poco::Exception. Code: 1000, e.code() = 0, SSL context exception: Error loading private key from file /etc/clickhouse-server/server.key: error:02000002:system library:OPENSSL_internal:No such file or directory (version 21.10.4.26 (official build))
+2021.12.13 09:55:28.864688 [ 1 ] {} <Trace> MySQLHandlerFactory: Failed to read RSA key pair from server certificate. Error: Code: 76. DB::Exception: Cannot open certificate file: /etc/clickhouse-server/server.crt. (CANNOT_OPEN_FILE) (version 21.10.4.26 (official build))
+2021.12.13 09:55:28.864711 [ 1 ] {} <Trace> MySQLHandlerFactory: Generating new RSA key pair.
+2021.12.13 09:55:29.071378 [ 1 ] {} <Information> Application: Listening for MySQL compatibility protocol: 0.0.0.0:9004
+2021.12.13 09:55:29.071542 [ 1 ] {} <Information> Application: Listening for PostgreSQL compatibility protocol: 0.0.0.0:9005
+2021.12.13 09:55:29.071598 [ 1 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 5.88 MiB, peak 10.59 MiB, will set to 321.98 MiB (RSS), difference: 316.10 MiB
+2021.12.13 09:55:29.072533 [ 1 ] {} <Information> DNSCacheUpdater: Update period 15 seconds
+2021.12.13 09:55:29.072602 [ 1 ] {} <Information> Application: Available RAM: 12.31 GiB; physical cores: 4; logical cores: 8.
+2021.12.13 09:55:29.072626 [ 61 ] {} <Debug> DNSResolver: Updating DNS cache
+2021.12.13 09:55:29.072805 [ 61 ] {} <Debug> DNSResolver: Updated DNS cache
+2021.12.13 09:55:29.073209 [ 1 ] {} <Information> Application: Ready for connections.
+2021.12.13 09:55:30.002854 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 321.99 MiB, peak 321.99 MiB, will set to 323.40 MiB (RSS), difference: 1.41 MiB
+2021.12.13 09:55:32.002808 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 323.40 MiB, peak 323.40 MiB, will set to 327.71 MiB (RSS), difference: 4.31 MiB
+2021.12.13 09:55:35.000164 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 327.71 MiB, peak 327.71 MiB, will set to 331.71 MiB (RSS), difference: 4.00 MiB
+2021.12.13 09:55:35.769640 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushing system log, 3047 entries to flush up to offset 3047
+2021.12.13 09:55:35.769715 [ 51 ] {} <Debug> SystemLog (system.asynchronous_metric_log): Creating new table system.asynchronous_metric_log for AsynchronousMetricLog
+2021.12.13 09:55:35.777978 [ 51 ] {} <Debug> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1): Loading data parts
+2021.12.13 09:55:35.778068 [ 51 ] {} <Debug> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1): There are no data parts
+2021.12.13 09:55:35.782667 [ 51 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.84 GiB.
+2021.12.13 09:55:35.797551 [ 51 ] {} <Trace> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1): Renaming temporary part tmp_insert_202112_1_1_0 to 202112_1_1_0.
+2021.12.13 09:55:35.797803 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushed system log up to offset 3047
+2021.12.13 09:55:36.000170 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 331.91 MiB, peak 335.96 MiB, will set to 336.56 MiB (RSS), difference: 4.65 MiB
+2021.12.13 09:55:36.267454 [ 55 ] {} <Trace> SystemLog (system.trace_log): Flushing system log, 17 entries to flush up to offset 17
+2021.12.13 09:55:36.267512 [ 55 ] {} <Debug> SystemLog (system.trace_log): Creating new table system.trace_log for TraceLog
+2021.12.13 09:55:36.267578 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushing system log, 8 entries to flush up to offset 8
+2021.12.13 09:55:36.267698 [ 58 ] {} <Debug> SystemLog (system.metric_log): Creating new table system.metric_log for MetricLog
+2021.12.13 09:55:36.281238 [ 55 ] {} <Debug> system.trace_log (eca5f84d-87f1-435f-aca5-f84d87f1235f): Loading data parts
+2021.12.13 09:55:36.281655 [ 55 ] {} <Debug> system.trace_log (eca5f84d-87f1-435f-aca5-f84d87f1235f): There are no data parts
+2021.12.13 09:55:36.283729 [ 58 ] {} <Debug> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07): Loading data parts
+2021.12.13 09:55:36.284144 [ 58 ] {} <Debug> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07): There are no data parts
+2021.12.13 09:55:36.287567 [ 55 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.84 GiB.
+2021.12.13 09:55:36.289648 [ 55 ] {} <Trace> system.trace_log (eca5f84d-87f1-435f-aca5-f84d87f1235f): Renaming temporary part tmp_insert_202112_1_1_0 to 202112_1_1_0.
+2021.12.13 09:55:36.289858 [ 55 ] {} <Trace> SystemLog (system.trace_log): Flushed system log up to offset 17
+2021.12.13 09:55:36.298588 [ 58 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.84 GiB.
+2021.12.13 09:55:36.311699 [ 58 ] {} <Trace> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07): Renaming temporary part tmp_insert_202112_1_1_0 to 202112_1_1_0.
+2021.12.13 09:55:36.312842 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 8
+2021.12.13 09:55:37.000170 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 337.18 MiB, peak 341.18 MiB, will set to 351.13 MiB (RSS), difference: 13.95 MiB
+2021.12.13 09:55:39.000578 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 351.13 MiB, peak 351.13 MiB, will set to 346.14 MiB (RSS), difference: -4.99 MiB
+2021.12.13 09:55:42.000128 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 346.14 MiB, peak 351.13 MiB, will set to 339.59 MiB (RSS), difference: -6.55 MiB
+2021.12.13 09:55:42.797999 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushing system log, 3451 entries to flush up to offset 6498
+2021.12.13 09:55:42.799926 [ 51 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.84 GiB.
+2021.12.13 09:55:42.801328 [ 51 ] {} <Trace> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1): Renaming temporary part tmp_insert_202112_2_2_0 to 202112_2_2_0.
+2021.12.13 09:55:42.801589 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushed system log up to offset 6498
+2021.12.13 09:55:43.790132 [ 55 ] {} <Trace> SystemLog (system.trace_log): Flushing system log, 2 entries to flush up to offset 19
+2021.12.13 09:55:43.791017 [ 55 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.84 GiB.
+2021.12.13 09:55:43.792659 [ 55 ] {} <Trace> system.trace_log (eca5f84d-87f1-435f-aca5-f84d87f1235f): Renaming temporary part tmp_insert_202112_2_2_0 to 202112_2_2_0.
+2021.12.13 09:55:43.792956 [ 55 ] {} <Trace> SystemLog (system.trace_log): Flushed system log up to offset 19
+2021.12.13 09:55:43.813003 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushing system log, 8 entries to flush up to offset 16
+2021.12.13 09:55:43.840589 [ 58 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.84 GiB.
+2021.12.13 09:55:43.858856 [ 58 ] {} <Trace> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07): Renaming temporary part tmp_insert_202112_2_2_0 to 202112_2_2_0.
+2021.12.13 09:55:43.864523 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 16
+2021.12.13 09:55:44.000164 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 339.68 MiB, peak 351.13 MiB, will set to 345.39 MiB (RSS), difference: 5.71 MiB
+2021.12.13 09:55:44.072985 [ 116 ] {} <Debug> DNSResolver: Updating DNS cache
+2021.12.13 09:55:44.073157 [ 116 ] {} <Debug> DNSResolver: Updated DNS cache
+2021.12.13 09:55:49.801761 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushing system log, 3451 entries to flush up to offset 9949
+2021.12.13 09:55:49.802885 [ 51 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:55:49.803553 [ 51 ] {} <Trace> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1): Renaming temporary part tmp_insert_202112_3_3_0 to 202112_3_3_0.
+2021.12.13 09:55:49.803708 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushed system log up to offset 9949
+2021.12.13 09:55:51.364910 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushing system log, 7 entries to flush up to offset 23
+2021.12.13 09:55:51.374858 [ 58 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:55:51.377009 [ 58 ] {} <Trace> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07): Renaming temporary part tmp_insert_202112_3_3_0 to 202112_3_3_0.
+2021.12.13 09:55:51.377616 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 23
+2021.12.13 09:55:52.000187 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 345.73 MiB, peak 351.13 MiB, will set to 344.55 MiB (RSS), difference: -1.17 MiB
+2021.12.13 09:55:56.000589 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 344.54 MiB, peak 351.13 MiB, will set to 342.87 MiB (RSS), difference: -1.67 MiB
+2021.12.13 09:55:56.802401 [ 48 ] {} <Trace> TCPHandlerFactory: TCP Request. Address: 172.23.0.2:57728
+2021.12.13 09:55:56.802470 [ 48 ] {} <Debug> TCPHandler: Connected ClickHouse client version 21.10.0, revision: 54449, user: default.
+2021.12.13 09:55:56.802589 [ 48 ] {} <Trace> ContextAccess (default): Settings: readonly=0, allow_ddl=true, allow_introspection_functions=false
+2021.12.13 09:55:56.802606 [ 48 ] {} <Trace> ContextAccess (default): List of all grants: GRANT SHOW, SELECT, INSERT, ALTER, CREATE, DROP, TRUNCATE, OPTIMIZE, KILL QUERY, MOVE PARTITION BETWEEN SHARDS, SYSTEM, dictGet, INTROSPECTION, SOURCES ON *.*
+2021.12.13 09:55:56.802612 [ 48 ] {} <Trace> ContextAccess (default): List of all grants including implicit: GRANT SHOW, SELECT, INSERT, ALTER, CREATE, DROP, TRUNCATE, OPTIMIZE, KILL QUERY, MOVE PARTITION BETWEEN SHARDS, SYSTEM, dictGet, INTROSPECTION, SOURCES ON *.*
+2021.12.13 09:55:56.803854 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushing system log, 3451 entries to flush up to offset 13400
+2021.12.13 09:55:56.803928 [ 48 ] {82dbf055-074d-415f-a44f-e5c4d7dec05d} <Debug> executeQuery: (from 172.23.0.2:57728) -----------------------------------------------------------------------------
+ -- Table I
+ -----------------------------------------------------------------------------
+ CREATE TABLE table_i ( field_a String, field_c UInt64 ) ENGINE = MergeTree ORDER BY field_a;
+2021.12.13 09:55:56.804035 [ 48 ] {82dbf055-074d-415f-a44f-e5c4d7dec05d} <Trace> ContextAccess (default): Access granted: CREATE TABLE ON default.table_i
+2021.12.13 09:55:56.804590 [ 51 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:55:56.805691 [ 51 ] {} <Trace> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1): Renaming temporary part tmp_insert_202112_4_4_0 to 202112_4_4_0.
+2021.12.13 09:55:56.805840 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushed system log up to offset 13400
+2021.12.13 09:55:56.807150 [ 48 ] {82dbf055-074d-415f-a44f-e5c4d7dec05d} <Debug> default.table_i (5d287bef-cee2-4ec5-9d28-7befcee29ec5): Loading data parts
+2021.12.13 09:55:56.807195 [ 48 ] {82dbf055-074d-415f-a44f-e5c4d7dec05d} <Debug> default.table_i (5d287bef-cee2-4ec5-9d28-7befcee29ec5): There are no data parts
+2021.12.13 09:55:56.809313 [ 48 ] {82dbf055-074d-415f-a44f-e5c4d7dec05d} <Debug> MemoryTracker: Peak memory usage (for query): 0.00 B.
+2021.12.13 09:55:56.809518 [ 48 ] {} <Debug> TCPHandler: Processed in 0.0058897 sec.
+2021.12.13 09:55:56.810098 [ 48 ] {d89f472a-a738-439d-9dd4-bf100d796178} <Debug> executeQuery: (from 172.23.0.2:57728) CREATE TABLE table_i_queue ( field_a String, field_c UInt64 ) ENGINE = Kafka() SETTINGS kafka_broker_list = 'kafka:9092', kafka_topic_list = 'topic_i', kafka_group_name = 'click-house', kafka_format = 'JSONEachRow', kafka_skip_broken_messages = 100, input_format_null_as_default = 1, input_format_skip_unknown_fields = 1;
+2021.12.13 09:55:56.810236 [ 48 ] {d89f472a-a738-439d-9dd4-bf100d796178} <Trace> ContextAccess (default): Access granted: CREATE TABLE ON default.table_i_queue
+2021.12.13 09:55:56.810378 [ 48 ] {d89f472a-a738-439d-9dd4-bf100d796178} <Information> BackgroundSchedulePool/BgMBSchPool: Create BackgroundSchedulePool with 16 threads
+2021.12.13 09:55:56.814569 [ 48 ] {d89f472a-a738-439d-9dd4-bf100d796178} <Debug> MemoryTracker: Peak memory usage (for query): 0.00 B.
+2021.12.13 09:55:56.814750 [ 48 ] {} <Debug> TCPHandler: Processed in 0.004892 sec.
+2021.12.13 09:55:56.815269 [ 48 ] {15b23ccd-1fbc-464d-b76c-d7b4652343d9} <Debug> executeQuery: (from 172.23.0.2:57728) CREATE MATERIALIZED VIEW table_i_mv TO table_i AS SELECT field_a, field_c FROM table_i_queue;
+2021.12.13 09:55:56.815384 [ 48 ] {15b23ccd-1fbc-464d-b76c-d7b4652343d9} <Trace> ContextAccess (default): Access granted: CREATE VIEW ON default.table_i_mv
+2021.12.13 09:55:56.815393 [ 48 ] {15b23ccd-1fbc-464d-b76c-d7b4652343d9} <Trace> ContextAccess (default): Access granted: SELECT, INSERT ON default.table_i
+2021.12.13 09:55:56.815517 [ 48 ] {15b23ccd-1fbc-464d-b76c-d7b4652343d9} <Trace> ContextAccess (default): Access granted: SELECT(field_a, field_c) ON default.table_i_queue
+2021.12.13 09:55:56.817616 [ 48 ] {15b23ccd-1fbc-464d-b76c-d7b4652343d9} <Debug> MemoryTracker: Peak memory usage (for query): 0.00 B.
+2021.12.13 09:55:56.817788 [ 48 ] {} <Debug> TCPHandler: Processed in 0.002722 sec.
+2021.12.13 09:55:56.818397 [ 48 ] {0b787fae-d98e-468f-9e39-063fb613bc3a} <Debug> executeQuery: (from 172.23.0.2:57728) -----------------------------------------------------------------------------
+ -- Table II
+ -----------------------------------------------------------------------------
+ CREATE TABLE table_ii ( field_b String, field_c UInt64, field_datetime DateTime ) ENGINE = MergeTree ORDER BY field_c;
+2021.12.13 09:55:56.818530 [ 48 ] {0b787fae-d98e-468f-9e39-063fb613bc3a} <Trace> ContextAccess (default): Access granted: CREATE TABLE ON default.table_ii
+2021.12.13 09:55:56.821527 [ 48 ] {0b787fae-d98e-468f-9e39-063fb613bc3a} <Debug> default.table_ii (abb60972-041b-4885-abb6-0972041b1885): Loading data parts
+2021.12.13 09:55:56.821587 [ 48 ] {0b787fae-d98e-468f-9e39-063fb613bc3a} <Debug> default.table_ii (abb60972-041b-4885-abb6-0972041b1885): There are no data parts
+2021.12.13 09:55:56.824272 [ 48 ] {0b787fae-d98e-468f-9e39-063fb613bc3a} <Debug> MemoryTracker: Peak memory usage (for query): 0.00 B.
+2021.12.13 09:55:56.824439 [ 48 ] {} <Debug> TCPHandler: Processed in 0.0062474 sec.
+2021.12.13 09:55:56.825055 [ 48 ] {5fde6c6f-5073-4da7-9bab-7d7bf7a62eb1} <Debug> executeQuery: (from 172.23.0.2:57728) CREATE TABLE table_ii_queue ( field_c UInt64, field_b String, field_datetime_raw String ) ENGINE = Kafka() SETTINGS kafka_broker_list = 'kafka:9092', kafka_topic_list = 'topic_ii', kafka_group_name = 'click-house', kafka_format = 'JSONEachRow', kafka_skip_broken_messages = 100, input_format_null_as_default = 1, input_format_skip_unknown_fields = 1;
+2021.12.13 09:55:56.825185 [ 48 ] {5fde6c6f-5073-4da7-9bab-7d7bf7a62eb1} <Trace> ContextAccess (default): Access granted: CREATE TABLE ON default.table_ii_queue
+2021.12.13 09:55:56.827837 [ 48 ] {5fde6c6f-5073-4da7-9bab-7d7bf7a62eb1} <Debug> MemoryTracker: Peak memory usage (for query): 0.00 B.
+2021.12.13 09:55:56.828043 [ 48 ] {} <Debug> TCPHandler: Processed in 0.0032682 sec.
+2021.12.13 09:55:56.828929 [ 48 ] {565f79ef-218f-4e80-b794-4582debe54c7} <Debug> executeQuery: (from 172.23.0.2:57728) CREATE MATERIALIZED VIEW table_ii_mv TO table_ii AS SELECT field_c as field_c, field_b as field_b, parseDateTimeBestEffort(field_datetime_raw) as field_datetime FROM table_ii_queue;
+2021.12.13 09:55:56.829092 [ 48 ] {565f79ef-218f-4e80-b794-4582debe54c7} <Trace> ContextAccess (default): Access granted: CREATE VIEW ON default.table_ii_mv
+2021.12.13 09:55:56.829107 [ 48 ] {565f79ef-218f-4e80-b794-4582debe54c7} <Trace> ContextAccess (default): Access granted: SELECT, INSERT ON default.table_ii
+2021.12.13 09:55:56.829988 [ 48 ] {565f79ef-218f-4e80-b794-4582debe54c7} <Trace> ContextAccess (default): Access granted: SELECT(field_c, field_b, field_datetime_raw) ON default.table_ii_queue
+2021.12.13 09:55:56.832824 [ 48 ] {565f79ef-218f-4e80-b794-4582debe54c7} <Debug> MemoryTracker: Peak memory usage (for query): 0.00 B.
+2021.12.13 09:55:56.833055 [ 48 ] {} <Debug> TCPHandler: Processed in 0.0044716 sec.
+2021.12.13 09:55:56.833277 [ 48 ] {} <Debug> TCPHandler: Done processing connection.
+2021.12.13 09:55:56.869720 [ 48 ] {} <Trace> TCPHandlerFactory: TCP Request. Address: 172.23.0.2:57734
+2021.12.13 09:55:56.869801 [ 48 ] {} <Debug> TCPHandler: Connected ClickHouse client version 21.10.0, revision: 54449, user: default.
+2021.12.13 09:55:56.872864 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> executeQuery: (from 172.23.0.2:57734) -----------------------------------------------------------------------------
+ -- View That Breaks Everything
+ -----------------------------------------------------------------------------
+ CREATE MATERIALIZED VIEW causing_problems_mv ENGINE=ReplacingMergeTree(max_field_datetime) ORDER BY (field_b, field_a) POPULATE AS SELECT field_a, field_b, argMax(field_c, field_datetime) as field_c, max(field_datetime) as max_field_datetime FROM ( SELECT field_a, field_b, field_c, field_datetime FROM table_ii LEFT JOIN table_i USING field_c ) GROUP BY (field_b, field_a); 
+2021.12.13 09:55:56.873077 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> ContextAccess (default): Access granted: CREATE VIEW ON default.causing_problems_mv
+2021.12.13 09:55:56.873444 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> ContextAccess (default): Access granted: SELECT(field_a, field_c) ON default.table_i
+2021.12.13 09:55:56.873519 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:55:56.873530 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:55:56.873535 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:55:56.873616 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> ContextAccess (default): Access granted: SELECT(field_b, field_c, field_datetime) ON default.table_ii
+2021.12.13 09:55:56.873888 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> ContextAccess (default): Access granted: SELECT(field_a, field_c) ON default.table_i
+2021.12.13 09:55:56.873951 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:55:56.873967 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:55:56.873974 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:55:56.874040 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> ContextAccess (default): Access granted: SELECT(field_b, field_c, field_datetime) ON default.table_ii
+2021.12.13 09:55:56.878946 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> default.`.inner_id.8faa2249-6d13-49ba-8faa-22496d13d9ba` (750ee72a-acac-4f4d-b50e-e72aacac7f4d): Loading data parts
+2021.12.13 09:55:56.879032 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> default.`.inner_id.8faa2249-6d13-49ba-8faa-22496d13d9ba` (750ee72a-acac-4f4d-b50e-e72aacac7f4d): There are no data parts
+2021.12.13 09:55:56.884867 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> ContextAccess (default): Access granted: INSERT(field_a, field_b, field_c, max_field_datetime) ON default.causing_problems_mv
+2021.12.13 09:55:56.885267 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> ContextAccess (default): Access granted: SELECT(field_a, field_c) ON default.table_i
+2021.12.13 09:55:56.885335 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> InterpreterSelectQuery: FetchColumns -> Complete
+2021.12.13 09:55:56.885375 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:55:56.885387 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:55:56.885396 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:55:56.885473 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> ContextAccess (default): Access granted: SELECT(field_b, field_c, field_datetime) ON default.table_ii
+2021.12.13 09:55:56.885675 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> InterpreterSelectQuery: FetchColumns -> Complete
+2021.12.13 09:55:56.885707 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> JoiningTransform: Before join block: 'field_b String String(size = 0), field_c UInt64 UInt64(size = 0), field_datetime DateTime UInt32(size = 0)'
+2021.12.13 09:55:56.885725 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> JoiningTransform: After join block: 'field_b String String(size = 0), field_c UInt64 UInt64(size = 0), field_datetime DateTime UInt32(size = 0), field_a String String(size = 0)'
+2021.12.13 09:55:56.885742 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> InterpreterSelectQuery: FetchColumns -> Complete
+2021.12.13 09:55:56.885851 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> JoiningTransform: Before join block: 'field_b String String(size = 0), field_c UInt64 UInt64(size = 0), field_datetime DateTime UInt32(size = 0)'
+2021.12.13 09:55:56.885863 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> JoiningTransform: After join block: 'field_b String String(size = 0), field_c UInt64 UInt64(size = 0), field_datetime DateTime UInt32(size = 0), field_a String String(size = 0)'
+2021.12.13 09:55:56.886477 [ 220 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> AggregatingTransform: Aggregated. 0 to 0 rows (from 0.00 B) in 0.0005606 sec. (0.000 rows/sec., 0.00 B/sec.)
+2021.12.13 09:55:56.886535 [ 220 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Trace> Aggregator: Merging aggregated data
+2021.12.13 09:55:56.887020 [ 48 ] {d536d204-a705-424b-a5e5-ec189f10bdad} <Debug> MemoryTracker: Peak memory usage (for query): 0.00 B.
+2021.12.13 09:55:56.887448 [ 48 ] {} <Debug> TCPHandler: Processed in 0.0152999 sec.
+2021.12.13 09:55:56.887492 [ 48 ] {} <Debug> TCPHandler: Done processing connection.
+2021.12.13 09:55:57.000128 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 343.19 MiB, peak 351.13 MiB, will set to 350.13 MiB (RSS), difference: 6.93 MiB
+2021.12.13 09:55:57.314681 [ 200 ] {} <Debug> StorageKafka (table_i_queue): Started streaming to 1 attached views
+2021.12.13 09:55:57.315434 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Already subscribed to topics: []
+2021.12.13 09:55:57.315462 [ 200 ] {} <Trace> StorageKafka (table_i_queue): No assignment
+2021.12.13 09:55:57.327883 [ 201 ] {} <Debug> StorageKafka (table_ii_queue): Started streaming to 1 attached views
+2021.12.13 09:55:57.328987 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:55:57.329110 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:55:57.329121 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:55:57.329792 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:55:57.329822 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:55:57.329827 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:55:57.330584 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Already subscribed to topics: []
+2021.12.13 09:55:57.330656 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): No assignment
+2021.12.13 09:55:58.767822 [ 52 ] {} <Trace> SystemLog (system.query_log): Flushing system log, 14 entries to flush up to offset 14
+2021.12.13 09:55:58.767864 [ 52 ] {} <Debug> SystemLog (system.query_log): Creating new table system.query_log for QueryLog
+2021.12.13 09:55:58.768508 [ 53 ] {} <Trace> SystemLog (system.query_thread_log): Flushing system log, 8 entries to flush up to offset 8
+2021.12.13 09:55:58.768531 [ 53 ] {} <Debug> SystemLog (system.query_thread_log): Creating new table system.query_thread_log for QueryThreadLog
+2021.12.13 09:55:58.775810 [ 52 ] {} <Debug> system.query_log (2e1741ca-631e-432b-ae17-41ca631e132b): Loading data parts
+2021.12.13 09:55:58.775857 [ 52 ] {} <Debug> system.query_log (2e1741ca-631e-432b-ae17-41ca631e132b): There are no data parts
+2021.12.13 09:55:58.775860 [ 53 ] {} <Debug> system.query_thread_log (987266e5-9915-451c-9872-66e59915a51c): Loading data parts
+2021.12.13 09:55:58.775896 [ 53 ] {} <Debug> system.query_thread_log (987266e5-9915-451c-9872-66e59915a51c): There are no data parts
+2021.12.13 09:55:58.778908 [ 53 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:55:58.779461 [ 52 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:55:58.779737 [ 53 ] {} <Trace> system.query_thread_log (987266e5-9915-451c-9872-66e59915a51c): Renaming temporary part tmp_insert_202112_1_1_0 to 202112_1_1_0.
+2021.12.13 09:55:58.779912 [ 53 ] {} <Trace> SystemLog (system.query_thread_log): Flushed system log up to offset 8
+2021.12.13 09:55:58.780757 [ 52 ] {} <Trace> system.query_log (2e1741ca-631e-432b-ae17-41ca631e132b): Renaming temporary part tmp_insert_202112_1_1_0 to 202112_1_1_0.
+2021.12.13 09:55:58.781060 [ 52 ] {} <Trace> SystemLog (system.query_log): Flushed system log up to offset 14
+2021.12.13 09:55:58.793333 [ 55 ] {} <Trace> SystemLog (system.trace_log): Flushing system log, 1 entries to flush up to offset 20
+2021.12.13 09:55:58.793850 [ 55 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:55:58.794266 [ 55 ] {} <Trace> system.trace_log (eca5f84d-87f1-435f-aca5-f84d87f1235f): Renaming temporary part tmp_insert_202112_3_3_0 to 202112_3_3_0.
+2021.12.13 09:55:58.794411 [ 55 ] {} <Trace> SystemLog (system.trace_log): Flushed system log up to offset 20
+2021.12.13 09:55:58.877772 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushing system log, 8 entries to flush up to offset 31
+2021.12.13 09:55:58.883893 [ 58 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:55:58.886182 [ 58 ] {} <Trace> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07): Renaming temporary part tmp_insert_202112_4_4_0 to 202112_4_4_0.
+2021.12.13 09:55:58.887146 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 31
+2021.12.13 09:55:59.000189 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 351.74 MiB, peak 355.75 MiB, will set to 357.64 MiB (RSS), difference: 5.89 MiB
+2021.12.13 09:55:59.073362 [ 124 ] {} <Debug> DNSResolver: Updating DNS cache
+2021.12.13 09:55:59.073510 [ 124 ] {} <Debug> DNSResolver: Updated DNS cache
+2021.12.13 09:56:03.806067 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushing system log, 3451 entries to flush up to offset 16851
+2021.12.13 09:56:03.807572 [ 51 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:03.808480 [ 51 ] {} <Trace> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1): Renaming temporary part tmp_insert_202112_5_5_0 to 202112_5_5_0.
+2021.12.13 09:56:03.808653 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushed system log up to offset 16851
+2021.12.13 09:56:03.877542 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Topics/partitions assigned: [ topic_i[0:#] ]
+2021.12.13 09:56:03.878614 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Topics/partitions assigned: [ topic_ii[0:#] ]
+2021.12.13 09:56:04.000133 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 358.09 MiB, peak 362.14 MiB, will set to 356.76 MiB (RSS), difference: -1.33 MiB
+2021.12.13 09:56:04.321073 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Polled batch of 2 messages. Offsets position: [ topic_i[0:2] ]
+2021.12.13 09:56:04.333769 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Polled batch of 3 messages. Offsets position: [ topic_ii[0:3] ]
+2021.12.13 09:56:04.821366 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:04.834028 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:04.834529 [ 201 ] {} <Trace> InterpreterSelectQuery: FetchColumns -> Complete
+2021.12.13 09:56:04.835003 [ 201 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:04.835606 [ 201 ] {} <Trace> default.table_ii (abb60972-041b-4885-abb6-0972041b1885): Renaming temporary part tmp_insert_all_1_1_0 to all_1_1_0.
+2021.12.13 09:56:04.836442 [ 201 ] {} <Trace> InterpreterSelectQuery: FetchColumns -> Complete
+2021.12.13 09:56:04.836524 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:56:04.836547 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:56:04.836558 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:56:04.836976 [ 201 ] {} <Trace> InterpreterSelectQuery: FetchColumns -> Complete
+2021.12.13 09:56:04.837032 [ 201 ] {} <Debug> JoiningTransform: Before join block: 'field_b String String(size = 0), field_c UInt64 UInt64(size = 0), field_datetime DateTime UInt32(size = 0)'
+2021.12.13 09:56:04.837063 [ 201 ] {} <Debug> JoiningTransform: After join block: 'field_b String String(size = 0), field_c UInt64 UInt64(size = 0), field_datetime DateTime UInt32(size = 0), field_a String String(size = 0)'
+2021.12.13 09:56:04.837103 [ 201 ] {} <Trace> InterpreterSelectQuery: FetchColumns -> Complete
+2021.12.13 09:56:04.837376 [ 201 ] {} <Debug> JoiningTransform: Before join block: 'field_b String String(size = 0), field_c UInt64 UInt64(size = 0), field_datetime DateTime UInt32(size = 0)'
+2021.12.13 09:56:04.837406 [ 201 ] {} <Debug> JoiningTransform: After join block: 'field_b String String(size = 0), field_c UInt64 UInt64(size = 0), field_datetime DateTime UInt32(size = 0), field_a String String(size = 0)'
+2021.12.13 09:56:04.837724 [ 201 ] {} <Trace> AggregatingTransform: Aggregating
+2021.12.13 09:56:04.837746 [ 201 ] {} <Trace> Aggregator: Aggregation method: serialized
+2021.12.13 09:56:04.837781 [ 201 ] {} <Debug> AggregatingTransform: Aggregated. 3 to 1 rows (from 108.00 B) in 0.0002697 sec. (11123.471 rows/sec., 391.06 KiB/sec.)
+2021.12.13 09:56:04.837793 [ 201 ] {} <Trace> Aggregator: Merging aggregated data
+2021.12.13 09:56:04.838225 [ 201 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:04.838696 [ 201 ] {} <Trace> default.`.inner_id.8faa2249-6d13-49ba-8faa-22496d13d9ba` (750ee72a-acac-4f4d-b50e-e72aacac7f4d): Renaming temporary part tmp_insert_all_1_1_0 to all_1_1_0.
+2021.12.13 09:56:04.838889 [ 201 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_ii (abb60972-041b-4885-abb6-0972041b1885) to default.causing_problems_mv (8faa2249-6d13-49ba-8faa-22496d13d9ba) took 2 ms.
+2021.12.13 09:56:04.838916 [ 201 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_ii_queue (a05981c3-2e6a-42a8-a059-81c32e6a82a8) to default.table_ii_mv (426bf174-978e-4ed4-826b-f174978eeed4) took 4 ms.
+2021.12.13 09:56:04.839063 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Polled offset 3 (topic: topic_ii, partition: 0)
+2021.12.13 09:56:04.855175 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Committed offset 3 (topic: topic_ii, partition: 0)
+2021.12.13 09:56:04.855245 [ 201 ] {} <Debug> StorageKafka (table_ii_queue): Pushing 3.00 rows to default.table_ii_queue (a05981c3-2e6a-42a8-a059-81c32e6a82a8) took 7527 ms.
+2021.12.13 09:56:04.855907 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stream(s) stalled. Reschedule.
+2021.12.13 09:56:04.855987 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Execution took 7528 ms.
+2021.12.13 09:56:05.321573 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:05.321863 [ 200 ] {} <Trace> InterpreterSelectQuery: FetchColumns -> Complete
+2021.12.13 09:56:05.322103 [ 200 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:05.322414 [ 200 ] {} <Trace> default.table_i (5d287bef-cee2-4ec5-9d28-7befcee29ec5): Renaming temporary part tmp_insert_all_1_1_0 to all_1_1_0.
+2021.12.13 09:56:05.322553 [ 200 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_i_queue (42b91c6a-7a94-4d38-82b9-1c6a7a94dd38) to default.table_i_mv (678137be-a9de-4b4f-a781-37bea9de1b4f) took 0 ms.
+2021.12.13 09:56:05.322643 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Polled offset 2 (topic: topic_i, partition: 0)
+2021.12.13 09:56:05.326179 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Committed offset 2 (topic: topic_i, partition: 0)
+2021.12.13 09:56:05.326222 [ 200 ] {} <Debug> StorageKafka (table_i_queue): Pushing 2.00 rows to default.table_i_queue (42b91c6a-7a94-4d38-82b9-1c6a7a94dd38) took 8011 ms.
+2021.12.13 09:56:05.326293 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stream(s) stalled. Reschedule.
+2021.12.13 09:56:05.326335 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Execution took 8011 ms.
+2021.12.13 09:56:05.356169 [ 201 ] {} <Debug> StorageKafka (table_ii_queue): Started streaming to 1 attached views
+2021.12.13 09:56:05.356739 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:56:05.356754 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:56:05.356761 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:56:05.356988 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:56:05.356998 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:56:05.357003 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:56:05.357745 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Already subscribed to topics: [topic_ii]
+2021.12.13 09:56:05.357769 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Already assigned to: [ topic_ii[0:#] ]
+2021.12.13 09:56:05.826448 [ 200 ] {} <Debug> StorageKafka (table_i_queue): Started streaming to 1 attached views
+2021.12.13 09:56:05.826913 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Already subscribed to topics: [topic_i]
+2021.12.13 09:56:05.826934 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Already assigned to: [ topic_i[0:#] ]
+2021.12.13 09:56:05.858188 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:06.000181 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 356.82 MiB, peak 362.14 MiB, will set to 355.71 MiB (RSS), difference: -1.12 MiB
+2021.12.13 09:56:06.268721 [ 54 ] {} <Trace> SystemLog (system.part_log): Flushing system log, 3 entries to flush up to offset 3
+2021.12.13 09:56:06.268761 [ 54 ] {} <Debug> SystemLog (system.part_log): Creating new table system.part_log for PartLog
+2021.12.13 09:56:06.274382 [ 54 ] {} <Debug> system.part_log (9b4fdfb6-c8a2-4974-9b4f-dfb6c8a2e974): Loading data parts
+2021.12.13 09:56:06.274450 [ 54 ] {} <Debug> system.part_log (9b4fdfb6-c8a2-4974-9b4f-dfb6c8a2e974): There are no data parts
+2021.12.13 09:56:06.276865 [ 54 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:06.277353 [ 54 ] {} <Trace> system.part_log (9b4fdfb6-c8a2-4974-9b4f-dfb6c8a2e974): Renaming temporary part tmp_insert_202112_1_1_0 to 202112_1_1_0.
+2021.12.13 09:56:06.277480 [ 54 ] {} <Trace> SystemLog (system.part_log): Flushed system log up to offset 3
+2021.12.13 09:56:06.294733 [ 55 ] {} <Trace> SystemLog (system.trace_log): Flushing system log, 2 entries to flush up to offset 22
+2021.12.13 09:56:06.296808 [ 55 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:06.297418 [ 55 ] {} <Trace> system.trace_log (eca5f84d-87f1-435f-aca5-f84d87f1235f): Renaming temporary part tmp_insert_202112_4_4_0 to 202112_4_4_0.
+2021.12.13 09:56:06.297557 [ 55 ] {} <Trace> SystemLog (system.trace_log): Flushed system log up to offset 22
+2021.12.13 09:56:06.327199 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:06.358346 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:06.387321 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushing system log, 7 entries to flush up to offset 38
+2021.12.13 09:56:06.392984 [ 58 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:06.395824 [ 58 ] {} <Trace> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07): Renaming temporary part tmp_insert_202112_5_5_0 to 202112_5_5_0.
+2021.12.13 09:56:06.396590 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 38
+2021.12.13 09:56:06.827397 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:06.858524 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:07.000130 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 355.98 MiB, peak 362.14 MiB, will set to 357.45 MiB (RSS), difference: 1.47 MiB
+2021.12.13 09:56:07.327527 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:07.358817 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:07.827712 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:07.859071 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:08.327848 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:08.359243 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:08.827981 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:08.859405 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:09.328507 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:09.359663 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:09.829112 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:09.859960 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:10.329401 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:10.360139 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:10.360216 [ 201 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_ii (abb60972-041b-4885-abb6-0972041b1885) to default.causing_problems_mv (8faa2249-6d13-49ba-8faa-22496d13d9ba) took 0 ms.
+2021.12.13 09:56:10.360229 [ 201 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_ii_queue (a05981c3-2e6a-42a8-a059-81c32e6a82a8) to default.table_ii_mv (426bf174-978e-4ed4-826b-f174978eeed4) took 0 ms.
+2021.12.13 09:56:10.360331 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Polled offset 3 (topic: topic_ii, partition: 0)
+2021.12.13 09:56:10.360338 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Nothing to commit.
+2021.12.13 09:56:10.360345 [ 201 ] {} <Debug> StorageKafka (table_ii_queue): Pushing 0.00 rows to default.table_ii_queue (a05981c3-2e6a-42a8-a059-81c32e6a82a8) took 5004 ms.
+2021.12.13 09:56:10.360399 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stream(s) stalled. Reschedule.
+2021.12.13 09:56:10.360427 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Execution took 5004 ms.
+2021.12.13 09:56:10.809127 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushing system log, 3451 entries to flush up to offset 20302
+2021.12.13 09:56:10.809846 [ 51 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:10.810371 [ 51 ] {} <Trace> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1): Renaming temporary part tmp_insert_202112_6_6_0 to 202112_6_6_0.
+2021.12.13 09:56:10.810479 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushed system log up to offset 20302
+2021.12.13 09:56:10.810560 [ 79 ] {} <Debug> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1) (MergerMutator): Selected 6 parts from 202112_1_1_0 to 202112_6_6_0
+2021.12.13 09:56:10.810584 [ 79 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:10.810699 [ 231 ] {} <Debug> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1) (MergerMutator): Merging 6 parts: from 202112_1_1_0 to 202112_6_6_0 into Compact
+2021.12.13 09:56:10.810736 [ 231 ] {} <Debug> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1) (MergerMutator): Selected MergeAlgorithm: Horizontal
+2021.12.13 09:56:10.810770 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_1_1_0, total 3047 rows starting from the beginning of the part
+2021.12.13 09:56:10.810862 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_2_2_0, total 3451 rows starting from the beginning of the part
+2021.12.13 09:56:10.810916 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_3_3_0, total 3451 rows starting from the beginning of the part
+2021.12.13 09:56:10.810958 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_4_4_0, total 3451 rows starting from the beginning of the part
+2021.12.13 09:56:10.811018 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_5_5_0, total 3451 rows starting from the beginning of the part
+2021.12.13 09:56:10.811062 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_6_6_0, total 3451 rows starting from the beginning of the part
+2021.12.13 09:56:10.813129 [ 231 ] {} <Debug> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1) (MergerMutator): Merge sorted 20302 rows, containing 5 columns (5 merged, 0 gathered) in 0.0024325 sec., 8346145.940390544 rows/sec., 223.85 MiB/sec.
+2021.12.13 09:56:10.813354 [ 231 ] {} <Trace> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1): Renaming temporary part tmp_merge_202112_1_6_1 to 202112_1_6_1.
+2021.12.13 09:56:10.813401 [ 231 ] {} <Trace> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1) (MergerMutator): Merged 6 parts: from 202112_1_1_0 to 202112_6_6_0
+2021.12.13 09:56:10.813410 [ 231 ] {} <Debug> MemoryTracker: Peak memory usage: 4.01 MiB.
+2021.12.13 09:56:10.829535 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:10.829620 [ 200 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_i_queue (42b91c6a-7a94-4d38-82b9-1c6a7a94dd38) to default.table_i_mv (678137be-a9de-4b4f-a781-37bea9de1b4f) took 0 ms.
+2021.12.13 09:56:10.829775 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Polled offset 2 (topic: topic_i, partition: 0)
+2021.12.13 09:56:10.829788 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Nothing to commit.
+2021.12.13 09:56:10.829796 [ 200 ] {} <Debug> StorageKafka (table_i_queue): Pushing 0.00 rows to default.table_i_queue (42b91c6a-7a94-4d38-82b9-1c6a7a94dd38) took 5003 ms.
+2021.12.13 09:56:10.829839 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stream(s) stalled. Reschedule.
+2021.12.13 09:56:10.829874 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Execution took 5003 ms.
+2021.12.13 09:56:10.860573 [ 201 ] {} <Debug> StorageKafka (table_ii_queue): Started streaming to 1 attached views
+2021.12.13 09:56:10.861012 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:56:10.861034 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:56:10.861040 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:56:10.861238 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:56:10.861246 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:56:10.861250 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:56:10.861894 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Already subscribed to topics: [topic_ii]
+2021.12.13 09:56:10.861911 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Already assigned to: [ topic_ii[0:#] ]
+2021.12.13 09:56:11.000126 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 357.45 MiB, peak 362.14 MiB, will set to 360.42 MiB (RSS), difference: 2.97 MiB
+2021.12.13 09:56:11.330051 [ 200 ] {} <Debug> StorageKafka (table_i_queue): Started streaming to 1 attached views
+2021.12.13 09:56:11.331117 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Already subscribed to topics: [topic_i]
+2021.12.13 09:56:11.331156 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Already assigned to: [ topic_i[0:#] ]
+2021.12.13 09:56:11.362633 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:11.831662 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:11.863293 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:12.332106 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:12.363969 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:12.832838 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:12.864592 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:13.333112 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:13.364887 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:13.833497 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:13.865252 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:13.897234 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushing system log, 8 entries to flush up to offset 46
+2021.12.13 09:56:13.919843 [ 58 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:13.927363 [ 58 ] {} <Trace> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07): Renaming temporary part tmp_insert_202112_6_6_0 to 202112_6_6_0.
+2021.12.13 09:56:13.927672 [ 89 ] {} <Debug> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07) (MergerMutator): Selected 6 parts from 202112_1_1_0 to 202112_6_6_0
+2021.12.13 09:56:13.927719 [ 89 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:13.927873 [ 231 ] {} <Debug> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07) (MergerMutator): Merging 6 parts: from 202112_1_1_0 to 202112_6_6_0 into Compact
+2021.12.13 09:56:13.928202 [ 231 ] {} <Debug> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07) (MergerMutator): Selected MergeAlgorithm: Horizontal
+2021.12.13 09:56:13.928540 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 46
+2021.12.13 09:56:13.929395 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_1_1_0, total 8 rows starting from the beginning of the part
+2021.12.13 09:56:13.931477 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_2_2_0, total 8 rows starting from the beginning of the part
+2021.12.13 09:56:13.933348 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_3_3_0, total 7 rows starting from the beginning of the part
+2021.12.13 09:56:13.935219 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_4_4_0, total 8 rows starting from the beginning of the part
+2021.12.13 09:56:13.937006 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_5_5_0, total 7 rows starting from the beginning of the part
+2021.12.13 09:56:13.938605 [ 231 ] {} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202112_6_6_0, total 8 rows starting from the beginning of the part
+2021.12.13 09:56:13.951018 [ 231 ] {} <Debug> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07) (MergerMutator): Merge sorted 46 rows, containing 302 columns (302 merged, 0 gathered) in 0.0231613 sec., 1986.0715935634012 rows/sec., 4.56 MiB/sec.
+2021.12.13 09:56:13.952179 [ 231 ] {} <Trace> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07): Renaming temporary part tmp_merge_202112_1_6_1 to 202112_1_6_1.
+2021.12.13 09:56:13.952413 [ 231 ] {} <Trace> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07) (MergerMutator): Merged 6 parts: from 202112_1_1_0 to 202112_6_6_0
+2021.12.13 09:56:13.952426 [ 231 ] {} <Debug> MemoryTracker: Peak memory usage: 4.92 MiB.
+2021.12.13 09:56:14.000527 [ 138 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 360.56 MiB, peak 365.40 MiB, will set to 364.92 MiB (RSS), difference: 4.37 MiB
+2021.12.13 09:56:14.073637 [ 171 ] {} <Debug> DNSResolver: Updating DNS cache
+2021.12.13 09:56:14.073788 [ 171 ] {} <Debug> DNSResolver: Updated DNS cache
+2021.12.13 09:56:14.333830 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:14.365654 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:14.834022 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:14.865876 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:15.334603 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:15.366301 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:15.834819 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:15.866567 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:15.866653 [ 201 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_ii (abb60972-041b-4885-abb6-0972041b1885) to default.causing_problems_mv (8faa2249-6d13-49ba-8faa-22496d13d9ba) took 0 ms.
+2021.12.13 09:56:15.866665 [ 201 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_ii_queue (a05981c3-2e6a-42a8-a059-81c32e6a82a8) to default.table_ii_mv (426bf174-978e-4ed4-826b-f174978eeed4) took 0 ms.
+2021.12.13 09:56:15.866825 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Polled offset 3 (topic: topic_ii, partition: 0)
+2021.12.13 09:56:15.866836 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Nothing to commit.
+2021.12.13 09:56:15.866871 [ 201 ] {} <Debug> StorageKafka (table_ii_queue): Pushing 0.00 rows to default.table_ii_queue (a05981c3-2e6a-42a8-a059-81c32e6a82a8) took 5006 ms.
+2021.12.13 09:56:15.866928 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stream(s) stalled. Reschedule.
+2021.12.13 09:56:15.866977 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Execution took 5006 ms.
+2021.12.13 09:56:16.335210 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:16.335380 [ 200 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_i_queue (42b91c6a-7a94-4d38-82b9-1c6a7a94dd38) to default.table_i_mv (678137be-a9de-4b4f-a781-37bea9de1b4f) took 0 ms.
+2021.12.13 09:56:16.335694 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Polled offset 2 (topic: topic_i, partition: 0)
+2021.12.13 09:56:16.335730 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Nothing to commit.
+2021.12.13 09:56:16.335758 [ 200 ] {} <Debug> StorageKafka (table_i_queue): Pushing 0.00 rows to default.table_i_queue (42b91c6a-7a94-4d38-82b9-1c6a7a94dd38) took 5005 ms.
+2021.12.13 09:56:16.335862 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stream(s) stalled. Reschedule.
+2021.12.13 09:56:16.335969 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Execution took 5005 ms.
+2021.12.13 09:56:16.367215 [ 201 ] {} <Debug> StorageKafka (table_ii_queue): Started streaming to 1 attached views
+2021.12.13 09:56:16.368270 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:56:16.368300 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:56:16.368312 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:56:16.368869 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:56:16.368895 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:56:16.368905 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:56:16.370217 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Already subscribed to topics: [topic_ii]
+2021.12.13 09:56:16.370258 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Already assigned to: [ topic_ii[0:#] ]
+2021.12.13 09:56:16.836212 [ 200 ] {} <Debug> StorageKafka (table_i_queue): Started streaming to 1 attached views
+2021.12.13 09:56:16.837787 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Already subscribed to topics: [topic_i]
+2021.12.13 09:56:16.837846 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Already assigned to: [ topic_i[0:#] ]
+2021.12.13 09:56:16.870842 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:17.338851 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:17.371069 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:17.811685 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushing system log, 3451 entries to flush up to offset 23753
+2021.12.13 09:56:17.813815 [ 51 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:17.815662 [ 51 ] {} <Trace> system.asynchronous_metric_log (21badabb-52a2-43c1-a1ba-dabb52a2b3c1): Renaming temporary part tmp_insert_202112_7_7_0 to 202112_7_7_0.
+2021.12.13 09:56:17.815953 [ 51 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushed system log up to offset 23753
+2021.12.13 09:56:17.839105 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:17.871348 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:18.339594 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:18.371792 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:18.839766 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:18.872178 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:19.340059 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:19.372416 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:19.840408 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:19.872645 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:20.340661 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:20.372960 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:20.841069 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:20.873401 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:21.298234 [ 55 ] {} <Trace> SystemLog (system.trace_log): Flushing system log, 2 entries to flush up to offset 24
+2021.12.13 09:56:21.299267 [ 55 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:21.300388 [ 55 ] {} <Trace> system.trace_log (eca5f84d-87f1-435f-aca5-f84d87f1235f): Renaming temporary part tmp_insert_202112_5_5_0 to 202112_5_5_0.
+2021.12.13 09:56:21.300697 [ 55 ] {} <Trace> SystemLog (system.trace_log): Flushed system log up to offset 24
+2021.12.13 09:56:21.342262 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:21.373829 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stalled
+2021.12.13 09:56:21.374150 [ 201 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_ii (abb60972-041b-4885-abb6-0972041b1885) to default.causing_problems_mv (8faa2249-6d13-49ba-8faa-22496d13d9ba) took 0 ms.
+2021.12.13 09:56:21.374218 [ 201 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_ii_queue (a05981c3-2e6a-42a8-a059-81c32e6a82a8) to default.table_ii_mv (426bf174-978e-4ed4-826b-f174978eeed4) took 0 ms.
+2021.12.13 09:56:21.374474 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Polled offset 3 (topic: topic_ii, partition: 0)
+2021.12.13 09:56:21.374508 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Nothing to commit.
+2021.12.13 09:56:21.374541 [ 201 ] {} <Debug> StorageKafka (table_ii_queue): Pushing 0.00 rows to default.table_ii_queue (a05981c3-2e6a-42a8-a059-81c32e6a82a8) took 5007 ms.
+2021.12.13 09:56:21.374745 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Stream(s) stalled. Reschedule.
+2021.12.13 09:56:21.374855 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Execution took 5007 ms.
+2021.12.13 09:56:21.428943 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushing system log, 7 entries to flush up to offset 53
+2021.12.13 09:56:21.439839 [ 58 ] {} <Debug> DiskLocal: Reserving 1.00 MiB on disk `default`, having unreserved 154.83 GiB.
+2021.12.13 09:56:21.444285 [ 58 ] {} <Trace> system.metric_log (b38ca98a-83b3-4e07-b38c-a98a83b31e07): Renaming temporary part tmp_insert_202112_7_7_0 to 202112_7_7_0.
+2021.12.13 09:56:21.445497 [ 58 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 53
+2021.12.13 09:56:21.842745 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stalled
+2021.12.13 09:56:21.842967 [ 200 ] {} <Trace> PushingToViewsBlockOutputStream: Pushing (sequentially) from default.table_i_queue (42b91c6a-7a94-4d38-82b9-1c6a7a94dd38) to default.table_i_mv (678137be-a9de-4b4f-a781-37bea9de1b4f) took 0 ms.
+2021.12.13 09:56:21.843469 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Polled offset 2 (topic: topic_i, partition: 0)
+2021.12.13 09:56:21.843532 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Nothing to commit.
+2021.12.13 09:56:21.843565 [ 200 ] {} <Debug> StorageKafka (table_i_queue): Pushing 0.00 rows to default.table_i_queue (42b91c6a-7a94-4d38-82b9-1c6a7a94dd38) took 5007 ms.
+2021.12.13 09:56:21.843700 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Stream(s) stalled. Reschedule.
+2021.12.13 09:56:21.843827 [ 200 ] {} <Trace> StorageKafka (table_i_queue): Execution took 5007 ms.
+2021.12.13 09:56:21.875170 [ 201 ] {} <Debug> StorageKafka (table_ii_queue): Started streaming to 1 attached views
+2021.12.13 09:56:21.876806 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:56:21.876852 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:56:21.876871 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:56:21.877737 [ 201 ] {} <Debug> HashJoin: Right sample block: field_a String String(size = 0), table_i.field_c UInt64 UInt64(size = 0)
+2021.12.13 09:56:21.877776 [ 201 ] {} <Debug> HashJoin: Right keys: [table_i.field_c] (required: []), left keys: [field_c]
+2021.12.13 09:56:21.877796 [ 201 ] {} <Debug> HashJoin: Columns to add: [field_a String String(size = 0)]
+2021.12.13 09:56:21.880083 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Already subscribed to topics: [topic_ii]
+2021.12.13 09:56:21.880175 [ 201 ] {} <Trace> StorageKafka (table_ii_queue): Already assigned to: [ topic_ii[0:#] ]
