@@ -1,0 +1,25 @@
+{
+    "records":[
+       {
+          "value":{
+             "field_c":1,
+             "field_b":"type_a",
+             "field_datetime_raw":"2021-12-01 12:00:00"
+          }
+       },
+       {
+          "value":{
+             "field_c":2,
+             "field_b":"type_a",
+             "field_datetime_raw":"2021-12-01 13:00:00"
+          }
+       },
+       {
+          "value":{
+             "field_c":1,
+             "field_b":"type_a",
+             "field_datetime_raw":"2021-12-01 14:00:00"
+          }
+       }
+    ]
+ }

@@ -1,0 +1,142 @@
+version: '2.0'
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:5.2.5
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - 22181:2181
+
+  kafka:
+    image: confluentinc/cp-kafka:5.2.5
+    depends_on:
+      - zookeeper
+    ports:
+      - 29092:29092
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://kafka:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  schema-registry:
+    image: confluentinc/cp-schema-registry:5.2.5
+    hostname: schema-registry
+    ports:
+    - "38081:38081"
+    depends_on:
+    - kafka
+    environment:
+      SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: zookeeper:2181
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry
+      SCHEMA_REGISTRY_LISTENERS: http://schema-registry:38081
+      SCHEMA_REGISTRY_DEBUG: "true"
+
+  kafka-init:
+    # creates kafka topics and shuts down
+    image: confluentinc/cp-kafka:5.2.5
+    ports:
+      - 29093:29092
+    depends_on:
+      - kafka
+    command: |
+      /bin/sh -c "
+        # Blocks until kafka is reachable
+        kafka-topics --bootstrap-server kafka:29092 --list;
+
+        echo 'Creating kafka topics';
+        /usr/bin/kafka-topics --create --if-not-exists \
+          --zookeeper zookeeper:2181 --replication-factor 1 \
+          --partitions 1 --topic topic_ii;
+        /usr/bin/kafka-topics --create --if-not-exists \
+          --zookeeper zookeeper:2181 --replication-factor 1 \
+          --partitions 1 --topic topic_i;
+        echo 'Kafka Topics Created';
+      "
+
+  kafka-rest:
+    image: confluentinc/cp-kafka-rest:5.2.5
+    hostname: kafka-rest
+    ports:
+    - "38082:38082"
+    depends_on:
+      - schema-registry
+    environment:
+      KAFKA_REST_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_REST_SCHEMA_REGISTRY_URL: schema-registry:38081
+      KAFKA_REST_HOST_NAME: kafka-rest
+      KAFKA_REST_LISTENERS: http://kafka-rest:38082
+
+  clickhouse:
+    image: yandex/clickhouse-server:21.10-alpine
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+      - "9009:9009"
+    environment:
+      CLICKHOUSE_USER: default
+      CLICKHOUSE_PASSWORD: default
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 262144
+        hard: 262144
+
+  clickhouse-client:
+    image: yandex/clickhouse-client
+    volumes:
+      - ./migrations:/migrations
+    entrypoint: |
+      /bin/bash -c "
+        # It may seem a little bit complicated but we really
+        # need to ensure random-proofness of our experiment
+        apt update;
+        apt -y install netcat;
+        apt -y install curl;
+
+        # Waiting for clickhouse server
+        while ! nc -z clickhouse 8123;
+        do
+          sleep 1;
+        done;
+
+        # Waiting for kafka-init to create topics and shut down
+        while nc -z kafka-init 29093;
+        do
+          sleep 1;
+        done;
+        echo 'Ready to migrate data';
+
+        # Applying basic migrations
+        clickhouse-client --host=clickhouse --multiquery \
+          --user=default --password=default < ./migrations/basic.sql;
+        echo 'Basic migrations applied';
+
+        # Applying migration with cursed view
+        clickhouse-client --host=clickhouse \
+          --user=default --password=default < ./migrations/add_view.sql;
+        # echo 'Cursed Migration applied';
+
+        # Posting data to topic
+        curl -H \"Content-Type: application/vnd.kafka.json.v2+json\" \
+          --data \"@./migrations/data_i.json\" \
+          -X POST kafka-rest:38082/topics/topic_i;
+        curl -H \"Content-Type: application/vnd.kafka.json.v2+json\" \
+          --data \"@./migrations/data_ii.json\" \
+          -X POST kafka-rest:38082/topics/topic_ii;
+        echo 'Data posted to topics';
+
+        # This container should run forever
+        while true;
+          do sleep 10000;
+        done;
+      "
+
+networks:
+  default:
+    external: false
+    name: clickhouse-network

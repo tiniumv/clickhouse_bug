@@ -1,0 +1,16 @@
+{
+    "records":[
+       {
+          "value":{
+             "field_a":"1",
+             "field_c":1
+          }
+       },
+       {
+          "value":{
+             "field_a":"2",
+             "field_c":2
+          }
+       }
+    ]
+ }
